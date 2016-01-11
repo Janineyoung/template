@@ -31,6 +31,10 @@ h5{
 	font-weight: 700;
 	line-height: 20px;
 }
+img {
+	width: 100%;
+	height: auto;
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -69,6 +73,11 @@ ul, ol{
 	padding: 0;
 	webkit-padding: 0;
 	moz-padding: 0;
+}
+
+#bgheader img {
+	width: 100%;
+	height: auto;
 }
 /* Navigation */
 #tf-menu {
@@ -223,6 +232,35 @@ ul.about-list li span{
 	position: relative;
 	left: 17%;
 }
+
+button.btn.tf-btn.btn-default-link {
+	text-align: center;
+	background: #FCAC45;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 40px;
+	text-color: #ffffff;
+	text-transform: uppercase;
+}
+
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn:focus, 
+.btn:active:focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn.active.focus {
+	outline: thin dotted;
+	outline: none;
+	outline-offset: none;
+}
+
 #team{ margin: 0 auto}
 #team .item{
     padding: 0;
@@ -389,7 +427,7 @@ ol.type li a.active { font-weight: 700; }
 	margin-bottom: 30px;
 }
 .portfolio-item .hover-bg{
-	height: 260px;
+	height: 220px;
 	overflow: hidden;
 	position: relative;
 }
@@ -479,6 +517,12 @@ ol.type li a.active { font-weight: 700; }
 }
 /* Contact Section */
 #tf-contact{
+	background: url(../img/04.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #ffffff;
 	padding: 80px 0;
 }
 
@@ -514,7 +558,7 @@ label {
 }
 
 button.btn.tf-btn.btn-default {
-	float: left;
+	text-align: center;
 	background: #FCAC45;
 	border: 0;
 	border-radius: 0;
